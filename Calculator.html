@@ -1,3 +1,5 @@
+<!-- A Simple Basic Calculator -->
+
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
@@ -6,9 +8,11 @@
     <body>
         <div class="bg"></div>
         <div class="main">
+            <!-- Code to dispaly the input -->
             <form name="form">
                 <input class="textview" name="textview">
             </form>
+            <!-- Start of Structure of the Calculator -->
             <table>
                 <tr>
                     <td><input class="button" type="button" value="C" onclick="clean()"></td>
@@ -32,7 +36,7 @@
                     <td><input class="button" type="button" value="1" onclick="insert(1)"></td>
                     <td><input class="button" type="button" value="2" onclick="insert(2)"></td>
                     <td><input class="button" type="button" value="3" onclick="insert(3)"></td>
-                    <td rowspan=5><input class="button" style="height:106" type="button" value="=" onclick="equal()"></td>
+                    <td rowspan=2><input class="button" style="height:106" type="button" value="=" onclick="equal()"></td>
                 </tr>
                 <tr>
                     <td colspan=2><input class="button" style="width:106" type="button" value="0" onclick="insert(0)"></td>
